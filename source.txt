@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#pragma warning(disable : 4996)
+
+
+int main() {
+		
+		
+		
+		int l = 0;
+	    	FILE* ot; 
+		ot = NULL;
+		char c;
+		while ((scanf("%c", &c))) //scan vstupu
+		{
+			if (c == 'v')
+			{
+				ot = v(&l);
+				
+			}
+
+		}
+	return 0;
+}
