@@ -11,7 +11,20 @@ FILE* v(int *w)
 		printf("Neotvoreny subor");
 		return 0;
 	}
-
+	char p[256];
+	int r = 0;
+	double d = 1;
+	while (fgets(p, 256, subor) != NULL) { //precitanie zaznamu a vypis do konzole
+		if		(d == 1) { printf("meno a priezvisko: %s", p);}
+		else if (d == 2) { printf("SPZ: %s", p); r++; }
+		else if (d == 3) { printf("typ auta: %s", p); }
+		else if (d == 4) { printf("cena: %.2lf\n", atof(p)); }
+		else if (d == 5) { printf("datum: %s\n", p); d = -1; }
+		d++;
+		
+	}
+	*w = r;//r je pocet zaznamov. spocital som ich tu, aby som si mohol vytvorit neskor dynamicke pole v maine
+	return subor; //vratim otvoreny subor (ktory som precital a je na konci)
 }
 
 
