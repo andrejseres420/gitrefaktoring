@@ -3,6 +3,17 @@
 #include <string.h>
 #pragma warning(disable : 4996)
 
+FILE* v(int *w)
+{
+	FILE* subor;
+	if ((subor = fopen("autobazar.txt", "r")) == NULL)
+	{
+		printf("Neotvoreny subor");
+		return 0;
+	}
+
+}
+
 
 int main() {
 		
