@@ -27,9 +27,6 @@ FILE* v(int *w)
 	return subor; //vratim otvoreny subor (ktory som precital a je na konci)
 }
 
-void o(FILE* x) //posuniem do funkcie otvoreny subor
-{
-}
 
 int main() {
 		
@@ -45,10 +42,6 @@ int main() {
 			{
 				ot = v(&l);
 				
-			}
-				if (c == 'o' && ot != NULL)
-			{
-				o(ot);
 			}
 
 		}
